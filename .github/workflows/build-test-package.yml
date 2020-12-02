@@ -42,9 +42,7 @@ jobs:
     - name: Download ITK
       run: |
         cd ..
-        git clone https://github.com/InsightSoftwareConsortium/ITK.git
-        cd ITK
-        git checkout ${{ matrix.itk-git-tag }}
+        git clone https://github.com/ViktorvdValk/ITK.git
 
     - name: Build ITK
       if: matrix.os != 'windows-2019'
