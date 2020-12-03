@@ -1,0 +1,24 @@
+name: Notebook tests
+
+on: [push, pull_request]
+
+jobs:
+  run:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest]
+        python-version: [3.6, 3.7, 3.8]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set Up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: |
+          cd examples
+          pip install -r requirements.txt
+      - uses: treebeardtech/treebeard@v0.1.1
+        with:
+          use-docker: false
+          notebooks: examples/*.ipynb
