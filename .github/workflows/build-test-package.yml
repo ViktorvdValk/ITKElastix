@@ -25,6 +25,7 @@ jobs:
             cxx-compiler: "clang++"
             itk-git-tag: "v5.1.2"
             cmake-build-type: "Debug"
+
     steps:
     - uses: actions/checkout@v1
 
