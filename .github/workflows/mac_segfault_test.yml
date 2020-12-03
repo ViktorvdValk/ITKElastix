@@ -1,4 +1,4 @@
-name: Notebook tests
+name: MacOS notebook tests
 
 on: [push, pull_request]
 
