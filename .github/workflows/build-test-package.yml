@@ -8,18 +8,8 @@ jobs:
     strategy:
       max-parallel: 3
       matrix:
-        os: [ubuntu-18.04, windows-2019, macos-10.15]
+        os: [macos-10.15]
         include:
-          - os: ubuntu-18.04
-            c-compiler: "gcc"
-            cxx-compiler: "g++"
-            itk-git-tag: "v5.1.2"
-            cmake-build-type: "Debug"
-          - os: windows-2019
-            c-compiler: "cl.exe"
-            cxx-compiler: "cl.exe"
-            itk-git-tag: "v5.1.2"
-            cmake-build-type: "Debug"
           - os: macos-10.15
             c-compiler: "clang"
             cxx-compiler: "clang++"
