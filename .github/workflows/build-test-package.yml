@@ -37,7 +37,7 @@ jobs:
         cd ..
         git clone https://github.com/ViktorvdValk/ITK.git
         cd ITK
-        git checkout MacSegfault
+        git checkout MacSegfault2
 
     - name: Build ITK
       if: matrix.os != 'windows-2019'
