@@ -83,7 +83,7 @@ jobs:
         set(CTEST_BUILD_NAME "${GITHUB_REPOSITORY}-${operating_system}-\${branch}")
         set(CTEST_UPDATE_VERSION_ONLY 1)
         set(CTEST_TEST_ARGS \${CTEST_TEST_ARGS} PARALLEL_LEVEL \${PARALLEL_LEVEL})
-        set(CTEST_BUILD_CONFIGURATION "Release")
+        set(CTEST_BUILD_CONFIGURATION "Debug")
         set(CTEST_CMAKE_GENERATOR "Ninja")
         set(CTEST_CUSTOM_WARNING_EXCEPTION
           \${CTEST_CUSTOM_WARNING_EXCEPTION}
