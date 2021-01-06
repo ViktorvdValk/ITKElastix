@@ -40,7 +40,7 @@ set(_itk_build_testing ${BUILD_TESTING})
 set(_itk_build_shared ${BUILD_SHARED_LIBS})
 set(BUILD_SHARED_LIBS OFF)
 set(elastix_GIT_REPOSITORY "https://github.com/ViktorvdValk/elastix.git")
-set(elastix_GIT_TAG "bce3e70b79e0696b03a53f530db7cc024e714080")
+set(elastix_GIT_TAG "91091ed54e3d76bac866e979b1155e8ec93fdbff")
 FetchContent_Declare(
   elx
   GIT_REPOSITORY ${elastix_GIT_REPOSITORY}
